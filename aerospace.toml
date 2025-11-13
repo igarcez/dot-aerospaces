@@ -128,7 +128,7 @@ automatically-unhide-macos-hidden-apps = false
 
     space = ['exec-and-forget open /Applications/Raycast.app', 'mode main']
     enter = ['exec-and-forget kitty', 'mode main']
-    q = ['close', 'mode main']
+    q = ['close --quit-if-last-window', 'mode main']
 
     left = 'focus left'
     down = 'focus down'
