@@ -8,7 +8,7 @@ after-startup-command = [
 ]
 
 # Start AeroSpace at login
-start-at-login = false
+start-at-login = true 
 
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
 enable-normalization-flatten-containers = true
@@ -93,96 +93,29 @@ automatically-unhide-macos-hidden-apps = false
     # end tell'
     # '''
 
+    # modes
+    end = 'mode navigation'
+    shift-end = 'mode service'
+
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-    alt-slash = 'layout tiles horizontal vertical'
-    alt-comma = 'layout accordion horizontal vertical'
+    # alt-slash = 'layout tiles horizontal vertical'
+    # alt-comma = 'layout accordion horizontal vertical'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-    alt-left = 'focus left'
-    alt-down = 'focus down'
-    alt-up = 'focus up'
-    alt-right = 'focus right'
+    # alt-left = 'focus left'
+    # alt-down = 'focus down'
+    # alt-up = 'focus up'
+    # alt-right = 'focus right'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move
-    alt-shift-left = 'move left'
-    alt-shift-down = 'move down'
-    alt-shift-up = 'move up'
-    alt-shift-right = 'move right'
+    # alt-shift-left = 'move left'
+    # alt-shift-down = 'move down'
+    # alt-shift-up = 'move up'
+    # alt-shift-right = 'move right'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#resize
-    alt-pageDown = 'resize smart -50'
-    alt-pageUp = 'resize smart +50'
-
-    # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-    #alt-1 = 'workspace 1'
-    #alt-2 = 'workspace 2'
-    #alt-3 = 'workspace 3'
-    #alt-4 = 'workspace 4'
-    #alt-5 = 'workspace 5'
-    #alt-6 = 'workspace 6'
-    #alt-7 = 'workspace 7'
-    #alt-8 = 'workspace 8'
-    #alt-9 = 'workspace 9'
-    #alt-a = 'workspace A' # In your config, you can drop workspace bindings that you don't need
-    #alt-b = 'workspace B'
-    # gcr
-    # htn
-    # mwv
-    alt-c = 'workspace C'
-    #alt-d = 'workspace D'
-    #alt-e = 'workspace E'
-    #alt-f = 'workspace F'
-    alt-g = 'workspace G'
-    alt-h = 'workspace H'
-    #alt-i = 'workspace I'
-    alt-m = 'workspace M'
-    alt-n = 'workspace N'
-    #alt-o = 'workspace O'
-    #alt-p = 'workspace P'
-    #alt-q = 'workspace Q'
-    alt-r = 'workspace R'
-    #alt-s = 'workspace S'
-    alt-t = 'workspace T'
-    #alt-u = 'workspace U'
-    alt-v = 'workspace V'
-    alt-w = 'workspace W'
-    #alt-x = 'workspace X'
-    #alt-y = 'workspace Y'
-    #alt-z = 'workspace Z'
-
-    # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-    #alt-shift-1 = 'move-node-to-workspace 1'
-    #alt-shift-2 = 'move-node-to-workspace 2'
-    #alt-shift-3 = 'move-node-to-workspace 3'
-    #alt-shift-4 = 'move-node-to-workspace 4'
-    #alt-shift-5 = 'move-node-to-workspace 5'
-    #alt-shift-6 = 'move-node-to-workspace 6'
-    #alt-shift-7 = 'move-node-to-workspace 7'
-    #alt-shift-8 = 'move-node-to-workspace 8'
-    #alt-shift-9 = 'move-node-to-workspace 9'
-    #alt-shift-a = 'move-node-to-workspace A'
-    #alt-shift-b = 'move-node-to-workspace B'
-    alt-shift-c = 'move-node-to-workspace C'
-    #alt-shift-d = 'move-node-to-workspace D'
-    #alt-shift-e = 'move-node-to-workspace E'
-    #alt-shift-f = 'move-node-to-workspace F'
-    alt-shift-g = 'move-node-to-workspace G'
-    alt-shift-h = 'move-node-to-workspace H'
-    #alt-shift-i = 'move-node-to-workspace I'
-    alt-shift-m = 'move-node-to-workspace M'
-    alt-shift-n = 'move-node-to-workspace N'
-    #alt-shift-o = 'move-node-to-workspace O'
-    #alt-shift-p = 'move-node-to-workspace P'
-    #alt-shift-q = 'move-node-to-workspace Q'
-    alt-shift-r = 'move-node-to-workspace R'
-    #alt-shift-s = 'move-node-to-workspace S'
-    alt-shift-t = 'move-node-to-workspace T'
-    #alt-shift-u = 'move-node-to-workspace U'
-    alt-shift-v = 'move-node-to-workspace V'
-    alt-shift-w = 'move-node-to-workspace W'
-    #alt-shift-x = 'move-node-to-workspace X'
-    #alt-shift-y = 'move-node-to-workspace Y'
-    #alt-shift-z = 'move-node-to-workspace Z'
+    # alt-pageDown = 'resize smart -50'
+    # alt-pageUp = 'resize smart +50'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
@@ -190,7 +123,62 @@ automatically-unhide-macos-hidden-apps = false
     alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
-    alt-shift-enter= 'mode service'
+
+[mode.navigation.binding]
+
+    space = ['exec-and-forget open /Applications/Raycast.app', 'mode main']
+    enter = ['exec-and-forget kitty', 'mode main']
+    q = ['close', 'mode main']
+
+    left = 'focus left'
+    down = 'focus down'
+    up = 'focus up'
+    right = 'focus right'
+
+    c = ['workspace C', 'mode main']
+    g = ['workspace G', 'mode main']
+    r = ['workspace R', 'mode main']
+
+    h = ['workspace H', 'mode main']
+    t = ['workspace T', 'mode main']
+    n = ['workspace N', 'mode main']
+    
+    m = ['workspace M', 'mode main']
+    w = ['workspace W', 'mode main']
+    v = ['workspace V', 'mode main']
+
+    esc = 'mode main'
+    end = 'mode moving'
+
+[mode.moving.binding]
+    left = 'move left'
+    down = 'move down'
+    up = 'move up'
+    right = 'move right'
+
+    c = ['move-node-to-workspace C', 'mode main']
+    g = ['move-node-to-workspace G', 'mode main']
+    r = ['move-node-to-workspace R', 'mode main']
+
+    h = ['move-node-to-workspace H', 'mode main']
+    t = ['move-node-to-workspace T', 'mode main']
+    n = ['move-node-to-workspace N', 'mode main']
+    
+    m = ['move-node-to-workspace M', 'mode main']
+    w = ['move-node-to-workspace W', 'mode main']
+    v = ['move-node-to-workspace V', 'mode main']
+
+    esc = 'mode main'
+    end = 'mode layout'
+
+[mode.layout.binding]
+    up = 'resize smart +50'
+    down = 'resize smart -50'
+
+    slash = ['layout tiles horizontal vertical', 'mode main']
+    comma = ['layout accordion horizontal vertical', 'mode main']
+
+    esc = 'mode main'
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
