@@ -97,26 +97,6 @@ automatically-unhide-macos-hidden-apps = false
     end = 'mode navigation'
     shift-end = 'mode service'
 
-    # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-    # alt-slash = 'layout tiles horizontal vertical'
-    # alt-comma = 'layout accordion horizontal vertical'
-
-    # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-    # alt-left = 'focus left'
-    # alt-down = 'focus down'
-    # alt-up = 'focus up'
-    # alt-right = 'focus right'
-
-    # See: https://nikitabobko.github.io/AeroSpace/commands#move
-    # alt-shift-left = 'move left'
-    # alt-shift-down = 'move down'
-    # alt-shift-up = 'move up'
-    # alt-shift-right = 'move right'
-
-    # See: https://nikitabobko.github.io/AeroSpace/commands#resize
-    # alt-pageDown = 'resize smart -50'
-    # alt-pageUp = 'resize smart +50'
-
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
@@ -147,6 +127,13 @@ automatically-unhide-macos-hidden-apps = false
     w = ['workspace W', 'mode main']
     v = ['workspace V', 'mode main']
 
+    a = ['workspace A', 'mode main']
+    o = ['workspace O', 'mode main']
+    e = ['workspace E', 'mode main']
+    u = ['workspace U', 'mode main']
+
+    tab = 'workspace-back-and-forth'
+
     esc = 'mode main'
     end = 'mode moving'
 
@@ -168,6 +155,14 @@ automatically-unhide-macos-hidden-apps = false
     w = ['move-node-to-workspace W', 'mode main']
     v = ['move-node-to-workspace V', 'mode main']
 
+    a = ['move-node-to-workspace A', 'mode main']
+    o = ['move-node-to-workspace O', 'mode main']
+    e = ['move-node-to-workspace E', 'mode main']
+    u = ['move-node-to-workspace U', 'mode main']
+
+    comma = 'move-workspace-to-monitor left'
+    period = 'move-workspace-to-monitor right'
+
     esc = 'mode main'
     end = 'mode layout'
 
@@ -175,8 +170,8 @@ automatically-unhide-macos-hidden-apps = false
     up = 'resize smart +50'
     down = 'resize smart -50'
 
-    slash = ['layout tiles horizontal vertical', 'mode main']
-    comma = ['layout accordion horizontal vertical', 'mode main']
+    comma = ['layout tiles horizontal vertical', 'mode main']
+    period = ['layout accordion horizontal vertical', 'mode main']
 
     esc = 'mode main'
 
