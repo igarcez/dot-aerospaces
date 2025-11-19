@@ -105,31 +105,31 @@ automatically-unhide-macos-hidden-apps = true
 
 [mode.navigation.binding]
 
-    space = ['exec-and-forget open /Applications/Raycast.app', 'mode main']
-    enter = ['exec-and-forget kitty', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
-    q = ['close --quit-if-last-window', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+    space = ['exec-and-forget open /Applications/Raycast.app']
+    enter = ['exec-and-forget kitty']
+    q = ['close --quit-if-last-window']
 
     left = 'focus left'
     down = 'focus down'
     up = 'focus up'
     right = 'focus right'
 
-    c = ['workspace C', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
-    g = ['workspace G', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
-    r = ['workspace R', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+    c = ['workspace C']
+    g = ['workspace G']
+    r = ['workspace R']
 
-    h = ['workspace H', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
-    t = ['workspace T', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
-    n = ['workspace N', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+    h = ['workspace H']
+    t = ['workspace T']
+    n = ['workspace N']
     
-    m = ['workspace M', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
-    w = ['workspace W', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
-    v = ['workspace V', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+    m = ['workspace M']
+    w = ['workspace W']
+    v = ['workspace V']
 
-    a = ['workspace A', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
-    o = ['workspace O', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
-    e = ['workspace E', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
-    u = ['workspace U', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
+    a = ['workspace A']
+    o = ['workspace O']
+    e = ['workspace E']
+    u = ['workspace U']
 
     tab = 'workspace-back-and-forth'
 
@@ -142,22 +142,22 @@ automatically-unhide-macos-hidden-apps = true
     up = 'move up'
     right = 'move right'
 
-    c = ['move-node-to-workspace C', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change mode=main']
-    g = ['move-node-to-workspace G', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change mode=main']
-    r = ['move-node-to-workspace R', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change mode=main']
+    c = ['move-node-to-workspace C']
+    g = ['move-node-to-workspace G']
+    r = ['move-node-to-workspace R']
 
-    h = ['move-node-to-workspace H', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change mode=main']
-    t = ['move-node-to-workspace T', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change mode=main']
-    n = ['move-node-to-workspace N', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change mode=main']
+    h = ['move-node-to-workspace H']
+    t = ['move-node-to-workspace T']
+    n = ['move-node-to-workspace N']
     
-    m = ['move-node-to-workspace M', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change mode=main']
-    w = ['move-node-to-workspace W', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change mode=main']
-    v = ['move-node-to-workspace V', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change mode=main']
+    m = ['move-node-to-workspace M']
+    w = ['move-node-to-workspace W']
+    v = ['move-node-to-workspace V']
 
-    a = ['move-node-to-workspace A', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change mode=main']
-    o = ['move-node-to-workspace O', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change mode=main']
-    e = ['move-node-to-workspace E', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change mode=main']
-    u = ['move-node-to-workspace U', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change mode=main']
+    a = ['move-node-to-workspace A']
+    o = ['move-node-to-workspace O']
+    e = ['move-node-to-workspace E']
+    u = ['move-node-to-workspace U']
 
     comma = 'move-workspace-to-monitor left'
     period = 'move-workspace-to-monitor right'
@@ -169,8 +169,8 @@ automatically-unhide-macos-hidden-apps = true
     up = 'resize smart +50'
     down = 'resize smart -50'
 
-    comma = ['layout tiles horizontal vertical', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change mode=main']
-    period = ['layout accordion horizontal vertical', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change mode=main']
+    comma = ['layout tiles horizontal vertical']
+    period = ['layout accordion horizontal vertical']
 
     esc = ['mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
 
@@ -178,17 +178,17 @@ automatically-unhide-macos-hidden-apps = true
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 [mode.service.binding]
     esc = ['reload-config', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change MODE=main']
-    r = ['flatten-workspace-tree', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change mode=main']
-    f = ['layout floating tiling', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change mode=main']
+    r = ['flatten-workspace-tree']
+    f = ['layout floating tiling']
 
-    alt-shift-left = ['join-with left', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change mode=main']
-    alt-shift-down = ['join-with down', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change mode=main']
-    alt-shift-up = ['join-with up', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change mode=main']
-    alt-shift-right = ['join-with right', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change mode=main']
+    alt-shift-left = ['join-with left']
+    alt-shift-down = ['join-with down']
+    alt-shift-up = ['join-with up']
+    alt-shift-right = ['join-with right']
 
     down = 'volume down'
     up = 'volume up'
     # todo
     # p = play
     # s = stop
-    shift-down = ['volume set 0', 'mode main', 'exec-and-forget sketchybar --trigger aerospace_mode_change mode=main']
+    shift-down = ['volume set 0']
